@@ -1,4 +1,13 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# game-app
+A simple turn-based multiplayer game.
+
+## Instalation
+
+Use commands:
+
+1. 'git clone https://github.com/lukasz-smolnicki/game-portfolio.git'
+2. cd to game-app
+3. 'npm isntall'.
 
 ## Available Scripts
 
