@@ -10,6 +10,7 @@ function App() {
   return (
     <Router>
       <div className='app'>
+        <h1>Imperium Galactica</h1>
         <header>
           {<Header />}
         </header>
