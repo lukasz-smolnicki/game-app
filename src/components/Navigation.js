@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import '../styles/Navigation.css';
 
 const list = [
     { name: 'report', path: '/', exact: true },
@@ -22,7 +21,7 @@ const Navigation = () => {
     ))
 
     return (
-        <nav className="mainNav">
+        <nav className="border navigation">
             <ul>
                 {menu}
             </ul>

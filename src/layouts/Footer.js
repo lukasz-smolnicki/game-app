@@ -1,8 +1,9 @@
-import React from 'react';
-const Footer = () => {
+import React from 'react'
+
+function Footer() {
     return (
-        <h6>Colonization ship NO. 0001 | Server status: ONLINE | Colony name: Name</h6>
-    );
+        <h6>Terminal v. 0.01 by Łukasz Smolnicki Copyright 2020 All Rights Reserved.</h6>
+    )
 }
 
-export default Footer;
+export default Footer

@@ -1,18 +1,15 @@
-import React from 'react';
-import '../styles/App.css';
-import { BrowserRouter as Router } from 'react-router-dom';
-import Header from './Header';
+import React, { Component } from 'react'
+import Header from './Header'
+import Main from './Main'
 import Footer from './Footer';
+import { BrowserRouter as Router } from 'react-router-dom';
+import '../styles/App.css';
 import fire from '../config/fire';
-import Home from './Home';
-import Login from './Login'
 
-class App extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      user: {},
-    }
+class App extends Component {
+
+  state = {
+
   }
 
   componentDidMount() {
@@ -36,20 +33,13 @@ class App extends React.Component {
     return (
       <Router>
         <div className='app'>
-          <h1>Imperium Galactica</h1>
-          <header>
-            {<Header />}
-          </header>
-          {this.state.user ? <Home /> : <Login />}
-
-          <footer>
-            {<Footer />}
-          </footer>
-          <h6>Terminal v. 0.01 <span dangerouslySetInnerHTML={{ "__html": "&copy;" }} /> Łukasz Smolnicki. All Rights Reserved</h6>
+          <header><Header /></header>
+          <main><Main /></main>
+          <footer><Footer /></footer>
         </div>
       </Router>
-    );
+    )
   }
 }
 
-export default App;
+export default App
