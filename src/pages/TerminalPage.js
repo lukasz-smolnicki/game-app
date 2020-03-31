@@ -28,6 +28,10 @@ const TerminalPage = () => {
     //     );
     // };
 
+    const scrollToBottom(id){
+        const
+    }
+
     return (
         <article>
             <div className="border terminal">
