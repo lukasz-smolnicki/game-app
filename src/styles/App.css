@@ -52,17 +52,17 @@ footer {
   margin-bottom: 30px;
 }
 
-.navigation {
-  width: auto;
+.navbar {
+  width: 180px;
   height: 100%;
 }
 
-.navigation ul {
+.navbar ul {
   list-style-type: none;
 
 }
 
-.navigation a {
+.navbar a {
   display: block;
   text-decoration: none;
   color: #0C833D;
@@ -71,12 +71,12 @@ footer {
   transition: .2s;
 }
 
-.navigation a:hover {
-  transform: translateX(20px);
+.navbar a:hover {
+  transform: translateX(5px);
   color: #29e18c;
 }
 
-.navigation a.active {
+.navbar a.active {
   color: #29e18c;
   text-shadow: 5px 0px 15px rgba(41, 225, 140, 0.5);
   border-bottom: 2px #29e18c solid;
@@ -86,12 +86,18 @@ footer {
 .home {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
+  height: 300px;
 }
 
 .game {
+  height: 100%;
+}
+
+.dashboard {
+  height: 100%;
+  width: 1070px;
   margin-left: 30px;
-  padding: 20px;
-  height: 300px;
 }
 
 .details {
@@ -120,7 +126,8 @@ footer {
 
 @media (max-width: 425px) {
   div.app {
-    width: 220px;
+    /* width: 220px; */
+    display: none;
   }
 }
 

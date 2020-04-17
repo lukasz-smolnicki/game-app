@@ -12,7 +12,7 @@ const list = [
     { name: 'next turn', path: '/turn' },
 ]
 
-const Navigation = () => {
+const SignedInLinks = () => {
 
     const menu = list.map(item => (
         <li key={item.name}>
@@ -21,12 +21,10 @@ const Navigation = () => {
     ))
 
     return (
-        <nav className="border navigation">
-            <ul>
-                {menu}
-            </ul>
-        </nav>
+        <ul>
+            {menu}
+        </ul>
     );
 }
 
-export default Navigation;
+export default SignedInLinks;
