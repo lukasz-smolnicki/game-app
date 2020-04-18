@@ -11,6 +11,7 @@ html {
   font-size: 20px;
   color: #29e18c;
   background-color: #000;
+  min-height: 100%;
 }
 
 div.app {
@@ -87,16 +88,21 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  height: 300px;
+  height: 400px;
 }
 
-.game {
-  height: 100%;
+.scrollbar::-webkit-scrollbar {
+  width: 3px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #0C833D;
 }
 
 .dashboard {
   height: 100%;
   width: 1070px;
+  overflow: auto;
   margin-left: 30px;
 }
 

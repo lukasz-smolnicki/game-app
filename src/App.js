@@ -5,8 +5,13 @@ import Navbar from './components/layouts/Navbar'
 import Dashboard from './components/dashboard/Dashboard'
 import DetailsPage from './components/layouts/DetailsPage'
 import Footer from './components/layouts/Footer'
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './styles/App.css';
+import ProjectDetalis from './components/projects/ProjectDetalis'
+import SignIn from './components/auth/SignIn'
+import SignUp from './components/auth/SignUp'
+import CreateProject from './components/projects/CreateProject'
+
 // import fire from '../../config/fire';
 
 class App extends Component {
@@ -39,8 +44,18 @@ class App extends Component {
               </section>
               <section>
                 <article class="home">
-                  <nav><Navbar /></nav>
-                  <section class="dashboard"><Dashboard /></section>
+                  <nav>
+                    <Navbar />
+                  </nav>
+                  <section class="dashboard border scrollbar">
+                    <Switch>
+                      <Route exact path='/' component={Dashboard} />
+                      <Route path='/project/:id' component={ProjectDetalis} />
+                      <Route path='/signin' component={SignIn} />
+                      <Route path='/signup' component={SignUp} />
+                      <Route path='/create' component={CreateProject} />
+                    </Switch>
+                  </section>
                 </article>
               </section>
               <section>

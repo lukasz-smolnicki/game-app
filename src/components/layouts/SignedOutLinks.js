@@ -2,8 +2,8 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const list = [
-    { name: 'sign up', path: '/signup', exact: true },
-    { name: 'login', path: '/login' },
+    { name: 'Signup', path: '/signup', exact: true },
+    { name: 'Login', path: '/signin' },
 ]
 
 const SignedOutLinks = () => {

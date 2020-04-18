@@ -30,7 +30,7 @@ const TerminalPage = () => {
 
     return (
         <article>
-            <div className="border terminal">
+            <div className="border terminal scrollbar">
                 <Typing speed={0}>
                     <h6>----------------</h6>
                     <h6>Connecting...</h6>
