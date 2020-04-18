@@ -28,6 +28,7 @@ const TerminalPage = () => {
     //     );
     // };
 
+
     return (
         <article>
             <div className="border terminal scrollbar">

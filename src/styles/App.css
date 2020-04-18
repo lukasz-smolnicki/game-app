@@ -48,9 +48,8 @@ footer {
 
 .terminal {
   height: 100px;
-  overflow: auto;
-  overflow-y: visible;
   margin-bottom: 30px;
+  overflow: auto;
 }
 
 .navbar {
