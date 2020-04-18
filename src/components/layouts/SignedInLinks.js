@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const list = [
     { name: 'report', path: '/', exact: true },
-    { name: 'colony', path: '/colony' },
+    { name: 'colony', path: '/colony' }, { name: 'create', path: '/create' },
     { name: 'crew', path: '/crew' },
     { name: 'investments', path: '/investments' },
     { name: 'army', path: '/army' },

@@ -2,11 +2,11 @@ import React from 'react'
 
 const ProjectSummary = ({ project }) => {
     return (
-        <div className="card z-deph-0 project-summary" >
-            <div className="card-content grey-text text-darken-3">
-                <span className="card-title">{project.title}</span>
-                <p>Posted by the Lukasz</p>
-                <p>3rd September, 2am</p>
+        <div >
+            <div>
+                <span>{project.title}</span>
+                <p>{project.content}</p>
+                <p>----------------------</p>
             </div>
         </div >
     )
