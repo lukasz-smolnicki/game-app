@@ -21,11 +21,11 @@ class SignUp extends Component {
                     <h5>SIGNUP</h5>
                     <div>
                         <label htmlFor="email">Email:</label>
-                        <input type="email" id="email" onChange={this.handleChange} />
+                        <input type="email" id="email" onChange={this.handleChange} autoComplete="username" />
                     </div>
                     <div>
                         <label htmlFor="password">Password:</label>
-                        <input type="password" id="password" onChange={this.handleChange} />
+                        <input type="password" id="password" onChange={this.handleChange} autoComplete="current-password" />
                     </div>
                     <div>
                         <label htmlFor="colonyName">Colony Name:</label>
