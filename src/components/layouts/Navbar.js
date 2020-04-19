@@ -1,9 +1,9 @@
 import React from 'react'
 import SignedInLink from './SignedInLinks'
 import SignedOutLink from './SignedOutLinks'
+import { connect } from 'react-redux'
 
 const Navbar = () => {
-
     return (
         <ul className="border navbar">
             <SignedInLink />
@@ -12,4 +12,10 @@ const Navbar = () => {
     );
 }
 
-export default Navbar;
+const mapStateToProps = (state) => {
+    return {
+
+    }
+}
+
+export default connect(mapStateToProps)(Navbar);

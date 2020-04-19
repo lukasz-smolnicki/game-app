@@ -12,26 +12,7 @@ import SignIn from './components/auth/SignIn'
 import SignUp from './components/auth/SignUp'
 import CreateProject from './components/projects/CreateProject'
 
-// import fire from '../../config/fire';
-
 class App extends Component {
-  // componentDidMount() {
-  //   this.authListener();
-  // }
-
-  // authListener() {
-  //   fire.auth().onAuthStateChanged((user) => {
-  //     // console.log(user);
-  //     if (user) {
-  //       this.setState({ user });
-  //       // localStorage.setItem('user', user.uid)
-  //     } else {
-  //       this.setState({ user: null });
-  //       // localStorage.removeItem('user')
-  //     }
-  //   });
-  // }
-
   render() {
     return (
       <BrowserRouter>
@@ -43,11 +24,11 @@ class App extends Component {
                 <TerminalPage />
               </section>
               <section>
-                <article class="home">
+                <article className="home">
                   <nav>
                     <Navbar />
                   </nav>
-                  <section class="dashboard border scrollbar">
+                  <section className="dashboard border scrollbar">
                     <Switch>
                       <Route exact path='/' component={Dashboard} />
                       <Route path='/project/:id' component={ProjectDetalis} />

@@ -1,6 +1,6 @@
 export const createProject = (project) => {
     return (dispatch, getState, { getFirebase, getFirestore }) => {
-        //async cal to database
+
         const firestore = getFirestore();
         firestore.collection('projects').add({
             ...project,
@@ -13,6 +13,5 @@ export const createProject = (project) => {
         }).catch((err) => {
             dispatch({ type: 'CREATE_PROJECT_ERROR', err });
         })
-
     }
 }
