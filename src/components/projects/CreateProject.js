@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { createProject } from '../../store/actions/projectAction'
 import { Redirect } from 'react-router-dom'
 
-class CreatProject extends Component {
+class CreateProject extends Component {
     state = {
         title: '',
         content: '',
@@ -54,4 +54,4 @@ const mapDispachToProps = (dispatch) => {
     }
 }
 
-export default connect(mapStateToProps, mapDispachToProps)(CreatProject)
+export default connect(mapStateToProps, mapDispachToProps)(CreateProject)
