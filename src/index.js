@@ -3,14 +3,12 @@ import ReactDOM from 'react-dom'
 import App from './App'
 import { createStore, applyMiddleware, compose } from 'redux'
 import rootReducer from './store/reducers/rootReducer'
-import { Provider } from 'react-redux'
+import { Provider, useSelector } from 'react-redux'
 import thunk from 'redux-thunk'
 import { createFirestoreInstance, reduxFirestore, getFirestore } from 'redux-firestore'
-import { ReactReduxFirebaseProvider, getFirebase } from 'react-redux-firebase'
+import { ReactReduxFirebaseProvider, getFirebase, isLoaded } from 'react-redux-firebase'
 import fbConfig from './config/fbConfig'
 import firebase from 'firebase/app'
-import { useSelector } from 'react-redux'
-import { isLoaded } from 'react-redux-firebase';
 
 const store = createStore(
     rootReducer,
@@ -20,9 +18,16 @@ const store = createStore(
     )
 );
 
+const profileSpecificProps = {
+    userProfile: 'user',
+    useFirestoreForProfile: true,
+    enableRedirectHandling: false,
+    resetBeforeLogin: false
+}
+
 const rrfProps = {
     firebase,
-    config: fbConfig,
+    config: profileSpecificProps,
     dispatch: store.dispatch,
     createFirestoreInstance,
     userProfile: 'user',
