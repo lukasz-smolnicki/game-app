@@ -2,6 +2,7 @@ import React from 'react'
 import moment from 'moment'
 
 const ProjectSummary = ({ project }) => {
+    console.table(project)
     return (
         <div >
             <div className="border-article">
