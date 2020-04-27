@@ -1,9 +1,17 @@
 import React from 'react'
 
-const Notifications = () => {
+const Notifications = (props) => {
     return (
         <div>
-            <p>Notifications</p>
+            <div>
+                <span>Notification</span>
+                <ul>
+                    <li>Notifcation</li>
+                    <li>Notifcation</li>
+                    <li>Notifcation</li>
+                    <li>Notifcation</li>
+                </ul>
+            </div>
         </div>
     )
 }
